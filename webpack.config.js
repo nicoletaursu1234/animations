@@ -29,6 +29,18 @@ const wpConfig = {
       rules: [
         { test: /\.jsx?$/, exclude: /node_modules/, use: 'happypack/loader' },
         { test: /\.(png|jpe?g|svg|woff2?|ttf|eot)$/, loader: 'url-loader?limit=8000' },
+        {
+          test: /\.mp4$/,
+          use: 'file-loader?name=videos/[name].[ext]',
+        },
+        {
+          test: /\.s[ac]ss$/i,
+          use: [
+            'style-loader',
+            'css-loader',
+            'sass-loader',
+          ],
+        },
       ],
     },
     plugins: [
