@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "npm run dev",
+    "start": "npm run dev --open",
     "env:dev": "cross-env NODE_ENV=development",
     "env:prod": "cross-env NODE_ENV=production",
     "env:example": "cross-env SOURCE=src-example",
@@ -88,10 +88,12 @@
     "webpack-md5-hash": "^0.0.6"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
+    "global": "^4.4.0",
     "lodash": "^4.17.13",
     "prop-types": "^15.6.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "react-hot-loader": "^4.6.3",
     "react-modal": "^3.1.11",
     "react-router-dom": "^4.3.1",
