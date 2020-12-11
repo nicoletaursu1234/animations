@@ -1,12 +1,14 @@
-import React, { useEffect, useRef, useState, useLayoutEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled, { css } from 'styled-components';
+import anime from 'animejs/lib/anime.es.js';
 
 import Logo from '../../atoms/Logo';
 import SidebarInfo from '../../molecules/SidebarInfo';
 
 export default () => {
+
   return (
-    <SidebarWrapper className='video'>
+    <SidebarWrapper>
       <Logo height='70' width='70' />
       <SidebarInfo />
     </SidebarWrapper>

@@ -8,6 +8,9 @@ import theme from './themes/default'
 import './main.scss'
 
 const GlobalStyle = createGlobalStyle`
+  *:not(div){
+    user-select: none;
+  }
   body {
     margin: 0;
     font-family: 'Rubik', sans-serif;

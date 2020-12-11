@@ -4,12 +4,15 @@ import { render } from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 
 import { basename } from "config";
+import AnimationContextProvider from './store/contexts';
 import App from "components/App";
 
 const renderApp = () => (
-  <BrowserRouter basename={basename}>
-    <App />
-  </BrowserRouter>
+  <AnimationContextProvider>
+    <BrowserRouter basename={basename}>
+      <App />
+    </BrowserRouter>
+  </AnimationContextProvider>
 );
 
 const root = document.getElementById("app");
