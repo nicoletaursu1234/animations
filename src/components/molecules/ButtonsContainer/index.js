@@ -1,10 +1,12 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useContext } from 'react';
 import styled from 'styled-components';
 import anime from 'animejs/lib/anime.es.js';
 
+import { AnimationContext } from 'store/contexts';
 import Button from '../../atoms/Button';
 
 export default () => {
+  const { dispatch } = useContext(AnimationContext);
   const buttonsRef = useRef(null);
 
   let timeline = anime.timeline({

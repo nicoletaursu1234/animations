@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 import { HomePage } from 'components'
+import { ConfigPage } from 'components'
 
 import theme from './themes/default'
 import './main.scss'
@@ -27,6 +28,7 @@ const App = () => {
       <GlobalStyle />
       <Switch>
         <Route path="/" component={HomePage} exact />
+        <Route path="/config" component={ConfigPage} exact />
       </Switch>
     </ThemeProvider>
   )

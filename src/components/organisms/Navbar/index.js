@@ -40,4 +40,5 @@ const NavbarWrapper = styled.div`
   padding: 30px 5%;
   margin-top: -50px;
   opacity: 0;
+  z-index: 2;
 `

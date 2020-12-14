@@ -9,7 +9,6 @@ export default ({ isPlaying }) => {
     loop: true,
   });
   
-  console.log(isPlaying)
   useEffect(() => {
     if (animationRef.current) {
       timeline

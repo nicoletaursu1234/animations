@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import styled, { css, keyframes } from 'styled-components';
 import anime from 'animejs/lib/anime.es.js';
 
-import logo from '../../../assets/img/bmw-logo.png';
+import logo from 'assets/img/bmw-logo.png';
 
 export default ({ height, width }) => {
   const [isAnimate, setIsAnimate] = useState(false);

@@ -9,8 +9,9 @@ export const AnimationReducer = (state, action) => {
           return {
             ...state,
             bgVisible: true,
+            redirect: true,
           }
       default:
-          return state
+          return state;
   }
 }
