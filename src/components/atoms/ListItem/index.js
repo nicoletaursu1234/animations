@@ -15,6 +15,6 @@ const ListItem = styled.p`
   &:hover {
     cursor: pointer;
     transform: translateY(-2px) !important;
-    opacity: 0.7 !important;  
+    opacity: 0.7 !important;
   }
 `

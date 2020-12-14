@@ -4,11 +4,11 @@ import { AnimationReducer } from '../reducers';
 export const AnimationContext = createContext({ bgVisible: true })
 
 const AnimationContextProvider = (props) => {
-  const [{ bgVisible, redirect }, dispatch] = useReducer(AnimationReducer, { bgVisible: true, redirect: false });
+  const [{ bgVisible }, dispatch] = useReducer(AnimationReducer, { bgVisible: true });
   
   const contextValue = useMemo(() => {
-    return { bgVisible, redirect, dispatch }
-  }, [bgVisible, redirect, dispatch])
+    return { bgVisible, dispatch }
+  }, [bgVisible, dispatch])
 
   return (
     <AnimationContext.Provider value={contextValue}>

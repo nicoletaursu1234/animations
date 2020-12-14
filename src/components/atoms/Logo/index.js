@@ -33,10 +33,10 @@ export default ({ height, width }) => {
 }
 
 const rotate = keyframes`
-  from {
+  0% {
     transform: rotate(0);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 `;

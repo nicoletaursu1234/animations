@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { CirclePicker } from 'react-color';
 import styled, { css, keyframes } from 'styled-components';
-import animejs from 'animejs/lib/anime.es.js';
 
 import stage from 'assets/img/stage.jpg';
 import { Car, Window } from 'components';

@@ -37,11 +37,11 @@ const HomePage = () => {
 
   return (
     <Wrapper>
-        <LoadingWrapper>
-          <LoadingContainer flip={!bgVisible} onTransitionEnd={() => setIsAnimate(true)}>
-            <StyledLoaderInner isAnimate={isAnimate} onAnimationEnd={loadConfigPage} />
-          </LoadingContainer>
-        </LoadingWrapper>
+      <LoadingWrapper>
+        <LoadingContainer flip={!bgVisible} onTransitionEnd={() => setIsAnimate(true)}>
+          <StyledLoaderInner isAnimate={isAnimate} onAnimationEnd={loadConfigPage} />
+        </LoadingContainer>
+      </LoadingWrapper>
 
       <Container visible={bgVisible}>
         <Sidebar />
